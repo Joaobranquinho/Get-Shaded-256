@@ -1,0 +1,5 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /home/brancs/Xilinx/Vivado/2017.4/bin/unwrapped/lnx64.o/xelab -wto e073687046754904acff0d64df96ed94 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot sha_hw_simu_func_synth xil_defaultlib.sha_hw_simu -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration

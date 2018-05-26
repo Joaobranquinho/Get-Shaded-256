@@ -1,0 +1,498 @@
+
+*** Running vivado
+    with args -log sha_hw.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source sha_hw.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source sha_hw.tcl -notrace
+Command: synth_design -top sha_hw -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9929 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1252.230 ; gain = 70.996 ; free physical = 1422 ; free virtual = 18469
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sha_hw' [/home/brancs/MEOCloud/CR/Get-Shaded-256/teste/teste.srcs/sources_1/imports/new/sha_hw.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'sha_hw' (1#1) [/home/brancs/MEOCloud/CR/Get-Shaded-256/teste/teste.srcs/sources_1/imports/new/sha_hw.vhd:21]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1296.762 ; gain = 115.527 ; free physical = 1425 ; free virtual = 18473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1296.762 ; gain = 115.527 ; free physical = 1429 ; free virtual = 18475
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1304.766 ; gain = 123.531 ; free physical = 1429 ; free virtual = 18474
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "s_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "s_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "done" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "w[0]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "w_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[32]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[33]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[34]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[35]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[36]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[37]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[38]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[39]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[40]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[41]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[42]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[43]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[44]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[45]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[46]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[47]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[48]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[49]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[50]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[51]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[52]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[53]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[54]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[55]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[56]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[57]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[58]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[59]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[60]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[61]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[62]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_reg[63]" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed.  [/home/brancs/MEOCloud/CR/Get-Shaded-256/teste/teste.srcs/sources_1/imports/new/sha_hw.vhd:75]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1329.797 ; gain = 148.562 ; free physical = 1404 ; free virtual = 18450
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     32 Bit       Adders := 1     
+	   5 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 5     
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	              256 Bit    Registers := 1     
+	               32 Bit    Registers := 72    
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
+	   5 Input      1 Bit        Muxes := 48    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module sha_hw 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     32 Bit       Adders := 1     
+	   5 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 5     
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	              256 Bit    Registers := 1     
+	               32 Bit    Registers := 72    
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
+	   5 Input      1 Bit        Muxes := 48    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed.  [/home/brancs/MEOCloud/CR/Get-Shaded-256/teste/teste.srcs/sources_1/imports/new/sha_hw.vhd:75]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 1617.305 ; gain = 436.070 ; free physical = 1175 ; free virtual = 18226
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|sha_hw      | k[0]       | 64x32         | LUT            | 
+|sha_hw      | k[0]       | 64x32         | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 1617.305 ; gain = 436.070 ; free physical = 1176 ; free virtual = 18226
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (s_c_reg[31]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_c_reg[28]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_c_reg[25]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_c_reg[23]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_c_reg[20]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_c_reg[19]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_c_reg[18]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_c_reg[17]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_c_reg[16]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_c_reg[14]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_c_reg[12]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_c_reg[11]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_c_reg[10]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_c_reg[9]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_c_reg[7]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_c_reg[6]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_c_reg[5]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_c_reg[4]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_c_reg[1]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_e_reg[31]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_e_reg[28]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_e_reg[25]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_e_reg[23]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_e_reg[20]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_e_reg[19]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_e_reg[18]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_e_reg[17]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_e_reg[16]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_e_reg[14]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_e_reg[12]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_e_reg[11]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_e_reg[10]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_e_reg[9]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_e_reg[7]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_e_reg[6]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_e_reg[5]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_e_reg[4]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_e_reg[1]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_a_reg[31]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_a_reg[27]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_a_reg[25]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_a_reg[22]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_a_reg[21]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_a_reg[20]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_a_reg[18]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_a_reg[16]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_a_reg[15]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_a_reg[14]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_a_reg[5]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_a_reg[4]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_a_reg[1]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_a_reg[0]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_g_reg[31]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_g_reg[27]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_g_reg[25]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_g_reg[22]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_g_reg[21]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_g_reg[20]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_g_reg[18]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_g_reg[16]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_g_reg[15]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_g_reg[14]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_g_reg[5]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_g_reg[4]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_g_reg[1]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_g_reg[0]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_b_reg[31]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_b_reg[30]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_b_reg[28]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_b_reg[27]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_b_reg[26]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_b_reg[25]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_b_reg[24]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_b_reg[23]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_b_reg[20]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_b_reg[19]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_b_reg[18]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_b_reg[16]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_b_reg[13]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_b_reg[12]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_b_reg[11]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_b_reg[8]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_b_reg[7]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_b_reg[6]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_b_reg[5]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_b_reg[4]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_b_reg[2]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_b_reg[1]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_f_reg[31]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_f_reg[30]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_f_reg[28]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_f_reg[27]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_f_reg[26]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_f_reg[25]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_f_reg[24]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_f_reg[23]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_f_reg[20]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_f_reg[19]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_f_reg[18]) is unused and will be removed from module sha_hw.
+WARNING: [Synth 8-3332] Sequential element (s_f_reg[16]) is unused and will be removed from module sha_hw.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'data_out_reg[32]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[33]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[37]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[46]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[47]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[48]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[57]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[59]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[66]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[71]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[75]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[77]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[80]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[82]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[88]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[89]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[91]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[92]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[95]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[97]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[100]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[101]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[102]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[105]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[108]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[110]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[113]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[114]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[115]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[124]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[161]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[164]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[165]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[166]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[169]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[172]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[174]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[177]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[178]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[179]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[188]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[194]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[199]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[203]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[205]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[208]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[210]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[216]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[217]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[219]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[220]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[223]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[224]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[225]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[229]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[238]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[239]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[240]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3886] merging instance 'data_out_reg[249]' (FDE) to 'data_out_reg[251]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\data_out_reg[251] )
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 1617.305 ; gain = 436.070 ; free physical = 1174 ; free virtual = 18224
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 1617.305 ; gain = 436.070 ; free physical = 1173 ; free virtual = 18223
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 1617.305 ; gain = 436.070 ; free physical = 1173 ; free virtual = 18223
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 1617.305 ; gain = 436.070 ; free physical = 1171 ; free virtual = 18221
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 1617.305 ; gain = 436.070 ; free physical = 1173 ; free virtual = 18223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 1617.305 ; gain = 436.070 ; free physical = 1174 ; free virtual = 18224
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 1617.305 ; gain = 436.070 ; free physical = 1174 ; free virtual = 18224
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    40|
+|3     |LUT1   |    13|
+|4     |LUT2   |    79|
+|5     |LUT3   |   101|
+|6     |LUT4   |   120|
+|7     |LUT5   |    59|
+|8     |LUT6   |  1670|
+|9     |MUXF7  |   739|
+|10    |MUXF8  |   228|
+|11    |FDRE   |  2307|
+|12    |FDSE   |    76|
+|13    |IBUF   |   515|
+|14    |OBUF   |   263|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  6211|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 1617.305 ; gain = 436.070 ; free physical = 1174 ; free virtual = 18224
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 163 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 1617.305 ; gain = 436.070 ; free physical = 1174 ; free virtual = 18224
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 1617.312 ; gain = 436.070 ; free physical = 1174 ; free virtual = 18224
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1522 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'sha_hw' is not ideal for floorplanning, since the cellview 'sha_hw' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+125 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:43 . Memory (MB): peak = 1679.477 ; gain = 511.617 ; free physical = 1189 ; free virtual = 18240
+INFO: [Common 17-1381] The checkpoint '/home/brancs/MEOCloud/CR/Get-Shaded-256/teste/teste.runs/synth_1/sha_hw.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file sha_hw_utilization_synth.rpt -pb sha_hw_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.23 . Memory (MB): peak = 1703.488 ; gain = 0.000 ; free physical = 1184 ; free virtual = 18240
+INFO: [Common 17-206] Exiting Vivado at Sat May 26 05:56:55 2018...

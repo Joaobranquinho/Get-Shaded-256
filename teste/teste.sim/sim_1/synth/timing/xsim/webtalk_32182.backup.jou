@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat May 26 04:35:57 2018
+# Process ID: 32182
+# Current directory: /home/brancs/MEOCloud/CR/Get-Shaded-256/teste/teste.sim/sim_1/synth/timing/xsim
+# Command line: wbtcv -mode batch -source /home/brancs/MEOCloud/CR/Get-Shaded-256/teste/teste.sim/sim_1/synth/timing/xsim/xsim.dir/sha_hw_simu_time_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/brancs/MEOCloud/CR/Get-Shaded-256/teste/teste.sim/sim_1/synth/timing/xsim/webtalk.log
+# Journal file: /home/brancs/MEOCloud/CR/Get-Shaded-256/teste/teste.sim/sim_1/synth/timing/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/brancs/MEOCloud/CR/Get-Shaded-256/teste/teste.sim/sim_1/synth/timing/xsim/xsim.dir/sha_hw_simu_time_synth/webtalk/xsim_webtalk.tcl -notrace

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brancs/MEOCloud/CR/Get-Shaded-256/teste/teste.sim/sim_1/synth/func/xsim/sha_hw_simu_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sha_hw
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/brancs/MEOCloud/CR/Get-Shaded-256/teste/teste.srcs/sim_1/imports/new/sha_hw_simu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sha_hw_simu

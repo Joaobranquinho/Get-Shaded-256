@@ -43,6 +43,7 @@ architecture Behavioral of sha_hw is
         x"748f82ee", x"78a5636f", x"84c87814", x"8cc70208", x"90befffa", x"a4506ceb", x"bef9a3f7", x"c67178f2"
     );
     
+    
     -- Array W[]
     signal w: big_array := (others=>(others=>'0'));
     
@@ -83,6 +84,15 @@ begin
                     s_g <= x"1f83d9ab";
                     s_h <= x"5be0cd19";
                     
+--                    h0 := 0x6a09e667
+--                    h1 := 0xbb67ae85
+--                    h2 := 0x3c6ef372
+--                    h3 := 0xa54ff53a
+--                    h4 := 0x510e527f
+--                    h5 := 0x9b05688c
+--                    h6 := 0x1f83d9ab
+--                    h7 := 0x5be0cd19
+                    
                     w(0) <= data_in(511 downto 480);
                     w(1) <= data_in(479 downto 448);
                     w(2) <= data_in(447 downto 416);
@@ -110,65 +120,72 @@ begin
 	               
                     if (i = 63) then
                         s_state <= ST_DONE;
-
-                    else
-                        -- calculate W
-                        --s0 := (w[i-15] rotacionarparadireita 7) xor (w[i-15] rotacionarparadireita 18) xor (w[i-15] deslicarparadireita 3)
-                        --s1 := (w[i-2] rotacionarparadireita 17) xor (w[i-2] rotacionarparadireita 19) xor (w[i-2] deslocarparadireita 10)
-                        --w[i] := w[i-16] + s0 + w[i-7] + s1
-                        w(i + 16) <= 
-                        std_logic_vector(
-                            -- w[i-16] + 
-                            unsigned(w(i)) +
-                            -- s0 + 
-                            (
-                                (unsigned(w(i + 1)) srl 7) xor
-                                (unsigned(w(i + 1)) srl 18) xor
-                                (unsigned(w(i + 1)) srl 3)
-                            ) + 
-                            --w[i-7] + 
-                            unsigned( w(i + 9) ) + 
-                            -- s1
-                            (
-                                (unsigned(w(i + 14)) srl 17) xor
-                                (unsigned(w(i + 14)) srl 19) xor
-                                (unsigned(w(i + 14)) srl 10)
-                            )
-                        );
-                        
-                        -- calculate a, b, ... h
-                        
-                        --                   S1 := (e rotacionarparadireita 6) xor (e rotacionarparadireita 11) xor (e rotacionarparadireita 25)
-                        --                   ch := (e e f) xor ((não e) e g)
-                        --                   temp1 := h + S1 + ch + k[i] + w[i]
-                        --                   S0 := (a rotacionarparadireita 2) xor (a rotacionarparadireita 13) xor (a rotacionarparadireita 22)
-                        --                   mai + 16 := (a e b) xor (a e c) xor (b e c)
-                        --                   temp2 := S0 + mai + 16
-                        
-                        
-                        --                   S1 <= ((unsigned(s_e) srl 6) xor (unsigned(s_e) srl 11) xor (unsigned(s_e) srl 25));
-                        --                   ch <= (unsigned(s_e and s_f) xor unsigned(not(s_e) and s_g));
-                        --                   temp1 <=  unsigned(s_h) + S1 + ch + unsigned(k(i)) + unsigned(w(i));
-                        --                   S0 <= ((unsigned(s_a) srl 2) xor (unsigned(s_a) srl 13) xor (unsigned(s_a) srl 22));
-                        --                   mai + 16 <= (unsigned(s_a and s_b) xor unsigned(s_a and s_c) xor unsigned(s_b and s_c));
-                        --                   temp2 <= S0 + mai + 16;
-                        
-                        
-                        s_a <= s_g;
-                        s_b <= s_f;
-                        s_c <= s_e;
-                        -- s_d + temp
-                        s_d <= std_logic_vector( unsigned(s_d) + (unsigned(s_h) + ((unsigned(s_e) srl 6) xor (unsigned(s_e) srl 11) xor (unsigned(s_e) srl 25)) + (unsigned(s_e and s_f) xor unsigned(not(s_e) and s_g)) + unsigned(k(i)) + unsigned(w(i))) );
-                        s_e <= s_c;
-                        s_f <= s_b;
-                        s_g <= s_a;
-                        -- temp2 + temp1
-                        s_h <= std_logic_vector((unsigned(s_h) + ((unsigned(s_e) srl 6) xor (unsigned(s_e) srl 11) xor (unsigned(s_e) srl 25)) + (unsigned(s_e and s_f) xor unsigned(not(s_e) and s_g)) + unsigned(k(i)) + unsigned(w(i))) + (((unsigned(s_a) srl 2) xor (unsigned(s_a) srl 13) xor (unsigned(s_a) srl 22)) + (unsigned(s_a and s_b) xor unsigned(s_a and s_c) xor unsigned(s_b and s_c))));
-                        
-                        
-                        i <= i + 1;
-	                end if;
-	           
+                    end if;
+                
+                    -- calculate W
+                    --s0 := (w[i-15] rotacionarparadireita 7) xor (w[i-15] rotacionarparadireita 18) xor (w[i-15] deslicarparadireita 3)
+                    --s1 := (w[i-2] rotacionarparadireita 17) xor (w[i-2] rotacionarparadireita 19) xor (w[i-2] deslocarparadireita 10)
+                    --w[i] := w[i-16] + s0 + w[i-7] + s1
+                    w(i + 16) <= 
+                    std_logic_vector(
+                        -- w[i-16] + 
+                        unsigned(w(i)) +
+                        -- s0 + 
+                        (
+                            (unsigned(w(i + 1)) ror 7) xor
+                            (unsigned(w(i + 1)) ror 18) xor
+                            (unsigned(w(i + 1)) srl 3)
+                        ) + 
+                        --w[i-7] + 
+                        unsigned( w(i + 9) ) + 
+                        -- s1
+                        (
+                            (unsigned(w(i + 14)) ror 17) xor
+                            (unsigned(w(i + 14)) ror 19) xor
+                            (unsigned(w(i + 14)) srl 10)
+                        )
+                    );
+                    
+                    -- calculate a, b, ... h
+                    
+                    --                   S1 := (e rotacionarparadireita 6) xor (e rotacionarparadireita 11) xor (e rotacionarparadireita 25)
+                    --                   ch := (e e f) xor ((não e) e g)
+                    --                   temp1 := h + S1 + ch + k[i] + w[i]
+                    --                   S0 := (a rotacionarparadireita 2) xor (a rotacionarparadireita 13) xor (a rotacionarparadireita 22)
+                    --                   maj := (a e b) xor (a e c) xor (b e c)
+                    --                   temp2 := S0 + maj
+                    
+                    
+                    --                   S1 <= ((unsigned(s_e) ror 6) xor (unsigned(s_e) ror 11) xor (unsigned(s_e) ror 25));
+                    --                   ch <= (unsigned(s_e and s_f) xor unsigned(not(s_e) and s_g));
+                    --                   temp1 <=  unsigned(s_h) + S1 + ch + unsigned(k(i)) + unsigned(w(i));
+                    --                   S0 <= ((unsigned(s_a) ror 2) xor (unsigned(s_a) ror 13) xor (unsigned(s_a) ror 22));
+                    --                   maj <= (unsigned(s_a and s_b) xor unsigned(s_a and s_c) xor unsigned(s_b and s_c));
+                    --                   temp2 <= S0 + maj;
+                    
+                    
+--                    h := g
+--                    g := f
+--                    f := e
+--                    e := d + temp1
+--                    d := c
+--                    c := b
+--                    b := a
+--                    a := temp1 + temp2
+                            
+                    s_h <= s_g;
+                    s_g <= s_f;
+                    s_f <= s_e;
+                    -- s_d + temp
+                    s_e <= std_logic_vector( unsigned(s_d) + (unsigned(s_h) + ((unsigned(s_e) ror 6) xor (unsigned(s_e) ror 11) xor (unsigned(s_e) ror 25)) + (unsigned(s_e and s_f) xor unsigned(not(s_e) and s_g)) + unsigned(k(i)) + unsigned(w(i))) );
+                    s_d <= s_c;
+                    s_c <= s_b;
+                    s_b <= s_a;
+                    -- temp2 + temp1
+                    s_a <= std_logic_vector((unsigned(s_h) + ((unsigned(s_e) ror 6) xor (unsigned(s_e) ror 11) xor (unsigned(s_e) ror 25)) + (unsigned(s_e and s_f) xor unsigned(not(s_e) and s_g)) + unsigned(k(i)) + unsigned(w(i))) + (((unsigned(s_a) ror 2) xor (unsigned(s_a) ror 13) xor (unsigned(s_a) ror 22)) + (unsigned(s_a and s_b) xor unsigned(s_a and s_c) xor unsigned(s_b and s_c))));
+                    
+                    i <= i + 1;
+               
                 elsif (s_state = ST_DONE) then
                     data_out <= s_a & s_b & s_c & s_d & s_e & s_f & s_g & s_h;
                     s_state <= ST_WAITING;

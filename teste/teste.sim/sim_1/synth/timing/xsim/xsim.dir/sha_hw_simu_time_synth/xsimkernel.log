@@ -1,4 +1,4 @@
-Running: xsim.dir/sha_hw_simu_time_synth/xsimk -simmode gui -wdb sha_hw_simu_time_synth.wdb -simrunnum 0 -socket 46541
+Running: xsim.dir/sha_hw_simu_time_synth/xsimk -simmode gui -wdb sha_hw_simu_time_synth.wdb -simrunnum 0 -socket 52001
 Design successfully loaded
-Design Loading Memory Usage: 146204 KB (Peak: 146204 KB)
-Design Loading CPU Usage: 400 ms
+Design Loading Memory Usage: 151468 KB (Peak: 151468 KB)
+Design Loading CPU Usage: 310 ms

@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sat May 26 16:38:24 2018
-# Process ID: 13957
+# Start of session at: Tue May 29 18:04:57 2018
+# Process ID: 25273
 # Current directory: /home/brancs/MEOCloud/CR/Get-Shaded-256/teste/teste.runs/synth_1
 # Command line: vivado -log sha_hw.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sha_hw.tcl
 # Log file: /home/brancs/MEOCloud/CR/Get-Shaded-256/teste/teste.runs/synth_1/sha_hw.vds
@@ -15,17 +15,17 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 14574 
+INFO: Helper process launched with PID 25959 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1252.227 ; gain = 70.996 ; free physical = 916 ; free virtual = 18263
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1252.230 ; gain = 70.996 ; free physical = 952 ; free virtual = 20960
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'sha_hw' [/home/brancs/MEOCloud/CR/Get-Shaded-256/teste/teste.srcs/sources_1/imports/new/sha_hw.vhd:21]
 INFO: [Synth 8-256] done synthesizing module 'sha_hw' (1#1) [/home/brancs/MEOCloud/CR/Get-Shaded-256/teste/teste.srcs/sources_1/imports/new/sha_hw.vhd:21]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1295.758 ; gain = 114.527 ; free physical = 920 ; free virtual = 18269
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1295.762 ; gain = 114.527 ; free physical = 953 ; free virtual = 20966
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1295.758 ; gain = 114.527 ; free physical = 923 ; free virtual = 18271
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1295.762 ; gain = 114.527 ; free physical = 958 ; free virtual = 20968
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -33,7 +33,7 @@ Start Loading Part and Timing Information
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1303.762 ; gain = 122.531 ; free physical = 922 ; free virtual = 18271
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1303.766 ; gain = 122.531 ; free physical = 958 ; free virtual = 20967
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "s_state" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "s_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -88,9 +88,9 @@ INFO: [Synth 8-5546] ROM "w_reg[60]" won't be mapped to RAM because it is too sp
 INFO: [Synth 8-5546] ROM "w_reg[61]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "w_reg[62]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "w_reg[63]" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element i_reg was removed.  [/home/brancs/MEOCloud/CR/Get-Shaded-256/teste/teste.srcs/sources_1/imports/new/sha_hw.vhd:76]
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed.  [/home/brancs/MEOCloud/CR/Get-Shaded-256/teste/teste.srcs/sources_1/imports/new/sha_hw.vhd:83]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1327.785 ; gain = 146.555 ; free physical = 902 ; free virtual = 18251
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1327.789 ; gain = 146.555 ; free physical = 938 ; free virtual = 20947
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -107,7 +107,7 @@ Detailed RTL Component Info :
 	   4 Input     32 Bit       Adders := 1     
 	   5 Input     32 Bit       Adders := 1     
 	   3 Input     32 Bit       Adders := 1     
-	   2 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 9     
 	   2 Input      6 Bit       Adders := 1     
 +---XORs : 
 	   3 Input     32 Bit         XORs := 5     
@@ -120,7 +120,7 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      2 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 10    
 	   4 Input      1 Bit        Muxes := 48    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -135,7 +135,7 @@ Detailed RTL Component Info :
 	   4 Input     32 Bit       Adders := 1     
 	   5 Input     32 Bit       Adders := 1     
 	   3 Input     32 Bit       Adders := 1     
-	   2 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 9     
 	   2 Input      6 Bit       Adders := 1     
 +---XORs : 
 	   3 Input     32 Bit         XORs := 5     
@@ -148,7 +148,7 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      2 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 10    
 	   4 Input      1 Bit        Muxes := 48    
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
@@ -166,9 +166,9 @@ No constraint files found.
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element i_reg was removed.  [/home/brancs/MEOCloud/CR/Get-Shaded-256/teste/teste.srcs/sources_1/imports/new/sha_hw.vhd:76]
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed.  [/home/brancs/MEOCloud/CR/Get-Shaded-256/teste/teste.srcs/sources_1/imports/new/sha_hw.vhd:83]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:34 . Memory (MB): peak = 1624.285 ; gain = 443.055 ; free physical = 676 ; free virtual = 18026
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 1625.523 ; gain = 444.289 ; free physical = 750 ; free virtual = 20755
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -196,7 +196,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:34 . Memory (MB): peak = 1624.285 ; gain = 443.055 ; free physical = 679 ; free virtual = 18029
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:33 . Memory (MB): peak = 1625.523 ; gain = 444.289 ; free physical = 752 ; free virtual = 20757
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -208,7 +208,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 1624.285 ; gain = 443.055 ; free physical = 678 ; free virtual = 18028
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:34 . Memory (MB): peak = 1625.523 ; gain = 444.289 ; free physical = 752 ; free virtual = 20757
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -232,7 +232,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 1624.285 ; gain = 443.055 ; free physical = 677 ; free virtual = 18027
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:35 . Memory (MB): peak = 1625.523 ; gain = 444.289 ; free physical = 750 ; free virtual = 20755
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -245,7 +245,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 1624.285 ; gain = 443.055 ; free physical = 677 ; free virtual = 18027
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:35 . Memory (MB): peak = 1625.523 ; gain = 444.289 ; free physical = 750 ; free virtual = 20755
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -257,25 +257,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:36 . Memory (MB): peak = 1624.285 ; gain = 443.055 ; free physical = 677 ; free virtual = 18027
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:35 . Memory (MB): peak = 1625.523 ; gain = 444.289 ; free physical = 750 ; free virtual = 20755
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:36 . Memory (MB): peak = 1624.285 ; gain = 443.055 ; free physical = 677 ; free virtual = 18027
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:35 . Memory (MB): peak = 1625.523 ; gain = 444.289 ; free physical = 750 ; free virtual = 20755
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:36 . Memory (MB): peak = 1624.285 ; gain = 443.055 ; free physical = 677 ; free virtual = 18027
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:36 . Memory (MB): peak = 1625.523 ; gain = 444.289 ; free physical = 750 ; free virtual = 20755
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:36 . Memory (MB): peak = 1624.285 ; gain = 443.055 ; free physical = 677 ; free virtual = 18027
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:36 . Memory (MB): peak = 1625.523 ; gain = 444.289 ; free physical = 750 ; free virtual = 20755
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -292,11 +292,11 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |    40|
-|3     |LUT1   |    14|
+|2     |CARRY4 |   104|
+|3     |LUT1   |   150|
 |4     |LUT2   |    62|
 |5     |LUT3   |   188|
-|6     |LUT4   |    62|
+|6     |LUT4   |    63|
 |7     |LUT5   |   114|
 |8     |LUT6   |  1931|
 |9     |MUXF7  |   832|
@@ -311,16 +311,16 @@ Report Instance Areas:
 +------+---------+-------+------+
 |      |Instance |Module |Cells |
 +------+---------+-------+------+
-|1     |top      |       |  6886|
+|1     |top      |       |  7087|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:36 . Memory (MB): peak = 1624.285 ; gain = 443.055 ; free physical = 677 ; free virtual = 18027
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:36 . Memory (MB): peak = 1625.523 ; gain = 444.289 ; free physical = 750 ; free virtual = 20755
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:36 . Memory (MB): peak = 1624.285 ; gain = 443.055 ; free physical = 679 ; free virtual = 18029
-Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:36 . Memory (MB): peak = 1624.293 ; gain = 443.055 ; free physical = 679 ; free virtual = 18029
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:36 . Memory (MB): peak = 1625.523 ; gain = 444.289 ; free physical = 752 ; free virtual = 20757
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:36 . Memory (MB): peak = 1625.531 ; gain = 444.289 ; free physical = 752 ; free virtual = 20757
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 1643 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 1707 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'sha_hw' is not ideal for floorplanning, since the cellview 'sha_hw' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -331,8 +331,8 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 64 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:39 . Memory (MB): peak = 1686.457 ; gain = 518.602 ; free physical = 693 ; free virtual = 18044
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:41 . Memory (MB): peak = 1687.695 ; gain = 519.836 ; free physical = 766 ; free virtual = 20772
 INFO: [Common 17-1381] The checkpoint '/home/brancs/MEOCloud/CR/Get-Shaded-256/teste/teste.runs/synth_1/sha_hw.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file sha_hw_utilization_synth.rpt -pb sha_hw_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1710.469 ; gain = 0.000 ; free physical = 692 ; free virtual = 18044
-INFO: [Common 17-206] Exiting Vivado at Sat May 26 16:39:13 2018...
+report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1711.707 ; gain = 0.000 ; free physical = 767 ; free virtual = 20775
+INFO: [Common 17-206] Exiting Vivado at Tue May 29 18:05:51 2018...

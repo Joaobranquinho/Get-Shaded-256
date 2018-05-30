@@ -1,6 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../../teste.srcs/sim_1/imports/new/sha_hw_simu.vhd" \
-
-# Do not sort compile order
-nosort

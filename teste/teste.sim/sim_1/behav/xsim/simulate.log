@@ -1,7 +1,0 @@
-Vivado Simulator 2017.4
-Time resolution is 1 ps
-ERROR: Index 64 out of bound 0 to 63
-Time: 9900 ns  Iteration: 1  Process: /sha_hw_simu/uut/line__67
-  File: /media/ramalho/hddUnix/ECT/CR/Get-Shaded-256/teste/teste.srcs/sources_1/imports/new/sha_hw.vhd
-
-HDL Line: /media/ramalho/hddUnix/ECT/CR/Get-Shaded-256/teste/teste.srcs/sources_1/imports/new/sha_hw.vhd:129

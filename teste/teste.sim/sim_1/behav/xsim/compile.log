@@ -1,4 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "/media/ramalho/hddUnix/ECT/CR/Get-Shaded-256/teste/teste.srcs/sources_1/imports/new/sha_hw.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity sha_hw
-INFO: [VRFC 10-163] Analyzing VHDL file "/media/ramalho/hddUnix/ECT/CR/Get-Shaded-256/teste/teste.srcs/sim_1/imports/new/sha_hw_simu.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity sha_hw_simu

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat May 26 17:10:46 2018
+# Process ID: 12727
+# Current directory: /media/ramalho/hddUnix/ECT/CR/Get-Shaded-256/teste/teste.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /media/ramalho/hddUnix/ECT/CR/Get-Shaded-256/teste/teste.sim/sim_1/behav/xsim/xsim.dir/sha_hw_simu_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /media/ramalho/hddUnix/ECT/CR/Get-Shaded-256/teste/teste.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /media/ramalho/hddUnix/ECT/CR/Get-Shaded-256/teste/teste.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /media/ramalho/hddUnix/ECT/CR/Get-Shaded-256/teste/teste.sim/sim_1/behav/xsim/xsim.dir/sha_hw_simu_behav/webtalk/xsim_webtalk.tcl -notrace

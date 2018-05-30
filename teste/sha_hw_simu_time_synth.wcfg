@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sha_hw_simu_time_synth.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="sha_hw_simu" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="10730850000fs"></ZoomStartTime>
+      <ZoomEndTime time="10848650001fs"></ZoomEndTime>
+      <Cursor1Time time="13369700000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="173"></NameColumnWidth>
+      <ValueColumnWidth column_width="133"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject type="logic" fp_name="/sha_hw_simu/s_clkIn">
+      <obj_property name="ElementShortName">s_clkIn</obj_property>
+      <obj_property name="ObjectShortName">s_clkIn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sha_hw_simu/s_reset">
+      <obj_property name="ElementShortName">s_reset</obj_property>
+      <obj_property name="ObjectShortName">s_reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sha_hw_simu/s_start">
+      <obj_property name="ElementShortName">s_start</obj_property>
+      <obj_property name="ObjectShortName">s_start</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sha_hw_simu/s_done">
+      <obj_property name="ElementShortName">s_done</obj_property>
+      <obj_property name="ObjectShortName">s_done</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sha_hw_simu/s_data_in">
+      <obj_property name="ElementShortName">s_data_in[511:0]</obj_property>
+      <obj_property name="ObjectShortName">s_data_in[511:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sha_hw_simu/s_data_out">
+      <obj_property name="ElementShortName">s_data_out[255:0]</obj_property>
+      <obj_property name="ObjectShortName">s_data_out[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sha_hw_simu/s_i">
+      <obj_property name="ElementShortName">s_i[5:0]</obj_property>
+      <obj_property name="ObjectShortName">s_i[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sha_hw_simu/uut/\w_reg[0]__0 ">
+      <obj_property name="ElementShortName">\w_reg[0]__0 [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\w_reg[0]__0 [31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sha_hw_simu/uut/\w_reg[20]__0 ">
+      <obj_property name="ElementShortName">\w_reg[20]__0 [31:0]</obj_property>
+      <obj_property name="ObjectShortName">\w_reg[20]__0 [31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sha_hw_simu/uut/s_a0">
+      <obj_property name="ElementShortName">s_a0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_a0[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sha_hw_simu/uut/s_b">
+      <obj_property name="ElementShortName">s_b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_b[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sha_hw_simu/uut/s_c">
+      <obj_property name="ElementShortName">s_c[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_c[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sha_hw_simu/uut/s_d">
+      <obj_property name="ElementShortName">s_d[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_d[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sha_hw_simu/uut/s_e0">
+      <obj_property name="ElementShortName">s_e0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_e0[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sha_hw_simu/uut/s_f">
+      <obj_property name="ElementShortName">s_f[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_f[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sha_hw_simu/uut/s_g">
+      <obj_property name="ElementShortName">s_g[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_g[31:0]</obj_property>
+   </wvobject>
+</wave_config>

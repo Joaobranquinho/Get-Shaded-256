@@ -21,7 +21,7 @@ end sha_hw;
 architecture Behavioral of sha_hw is
 
 	-- My signals
-	type TState is (ST_WAITING, ST_ATTRIBUTION0, ST_ATTRIBUTION1, ST_HASHING, ST_EVALUATE ,ST_DONE);
+	type TState is (ST_WAITING, ST_ATTRIBUTION, ST_SCND_ATTRIBUTION, ST_HASHING, ST_EVALUATE ,ST_DONE);
 	signal s_state : TState:= ST_WAITING;
 	signal s_a, s_b, s_c, s_d, s_e, s_f, s_g, s_h: unsigned(31 downto 0);
 	
@@ -96,10 +96,10 @@ begin
 
                     
                     if (start = '1') then
-                        s_state <= ST_ATTRIBUTION0;
+                        s_state <= ST_ATTRIBUTION;
                     end if;
 
-                elsif (s_state = ST_ATTRIBUTION0) then
+                elsif (s_state = ST_ATTRIBUTION) then
 
                     w(0) <= unsigned(s_data_in(iteration)(511 downto 480));
                     w(1) <= unsigned(s_data_in(iteration)(479 downto 448));
@@ -130,7 +130,7 @@ begin
                     
                     s_state <= ST_HASHING;
 
-                elsif (s_state = ST_ATTRIBUTION1) then
+                elsif (s_state = ST_SCND_ATTRIBUTION) then
                 
                     h_0 <= h_0 + s_a; 
                     h_1 <= h_1 + s_b; 
@@ -145,7 +145,7 @@ begin
                     
 
                     if (iteration = 0) then
-                        s_state <= ST_ATTRIBUTION0;
+                        s_state <= ST_ATTRIBUTION;
 
                     else
                         s_state <= ST_EVALUATE;
@@ -153,7 +153,7 @@ begin
 	           
                 elsif (s_state = ST_HASHING) then
                     if (i = 63) then
-                        s_state <= ST_ATTRIBUTION1;
+                        s_state <= ST_SCND_ATTRIBUTION;
                     end if;
                 
                     w(i + 16) <= 

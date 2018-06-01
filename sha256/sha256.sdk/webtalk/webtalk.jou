@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# 
+# Start of session at: Fri Jun  1 21:23:04 2018
+# Process ID: 18320
+# Current directory: /home/brancs/MEOCloud/CR/proj/sha256/sha256.sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /home/brancs/MEOCloud/CR/proj/sha256/sha256.sdk/webtalk/webtalk.log
+# Journal file: /home/brancs/MEOCloud/CR/proj/sha256/sha256.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

@@ -1,3 +1,6 @@
 *
 !*.vhd
 !.gitignore
+!LICENCE
+!README.rm
+

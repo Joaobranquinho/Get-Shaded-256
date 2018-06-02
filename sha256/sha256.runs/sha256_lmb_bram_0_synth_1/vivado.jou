@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Jun  2 01:03:33 2018
+# Process ID: 20863
+# Current directory: /home/brancs/MEOCloud/CR/Get-Shaded-256/sha256/sha256.runs/sha256_lmb_bram_0_synth_1
+# Command line: vivado -log sha256_lmb_bram_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sha256_lmb_bram_0.tcl
+# Log file: /home/brancs/MEOCloud/CR/Get-Shaded-256/sha256/sha256.runs/sha256_lmb_bram_0_synth_1/sha256_lmb_bram_0.vds
+# Journal file: /home/brancs/MEOCloud/CR/Get-Shaded-256/sha256/sha256.runs/sha256_lmb_bram_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source sha256_lmb_bram_0.tcl -notrace

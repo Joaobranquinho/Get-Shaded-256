@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1527903708">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="sha256_wrapper.drc"/>
+  <File Type="BG-BGN" Name="sha256_wrapper.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="sha256_wrapper.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="sha256_wrapper.ltx"/>
+  <File Type="BITSTR-MMI" Name="sha256_wrapper.mmi"/>
+  <File Type="BITSTR-BMM" Name="sha256_wrapper_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="sha256_wrapper.nky"/>
+  <File Type="BITSTR-RBT" Name="sha256_wrapper.rbt"/>
+  <File Type="BITSTR-MSK" Name="sha256_wrapper.msk"/>
+  <File Type="BG-BIN" Name="sha256_wrapper.bin"/>
+  <File Type="BG-BIT" Name="sha256_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="sha256_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="sha256_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="sha256_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="sha256_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="sha256_wrapper_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="sha256_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="sha256_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="sha256_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="sha256_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="sha256_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="sha256_wrapper_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="sha256_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="sha256_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="sha256_wrapper_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="sha256_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="sha256_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="sha256_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="sha256_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="sha256_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="sha256_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="sha256_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="sha256_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="sha256_wrapper_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="sha256_wrapper_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="sha256_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="sha256_wrapper_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="sha256_wrapper_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="sha256_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="sha256_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="sha256_wrapper_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="sha256_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="sha256_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="sha256_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="sha256_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="sha256_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="sha256_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="sha256_wrapper_io_placed.rpt"/>
+  <File Type="RDI-RDI" Name="sha256_wrapper.vdi"/>
+  <File Type="PWROPT-TIMING" Name="sha256_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="sha256_wrapper_drc_pwropted.rpt"/>
+  <File Type="OPT-TIMING" Name="sha256_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="sha256_wrapper.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="sha256_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="sha256_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="sha256_wrapper_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="sha256_wrapper_timing_summary_init.rpt"/>
+  <File Type="PWROPT-DCP" Name="sha256_wrapper_pwropt.dcp"/>
+  <File Type="REPORTS-TCL" Name="sha256_wrapper_reports.tcl"/>
+  <File Type="PLACE-DCP" Name="sha256_wrapper_placed.dcp"/>
+  <File Type="PA-TCL" Name="sha256_wrapper.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/sha256/sha256.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/sha256/hdl/sha256_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="sha256_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="sha256_ilmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="sha256_dlmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="sha256_axi_uartlite_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="sha256_ilmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="sha256_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="sha256_rst_clk_wiz_1_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="sha256_lmb_bram_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="sha256_mdm_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="sha256_clk_wiz_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="sha256_dlmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="sha256_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="sha256_sha256_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="sha256_microblaze_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="sha256_axi_gpio_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="sha256_axi_intc_0_0"/>
+</GenRun>

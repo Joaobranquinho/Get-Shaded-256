@@ -7,8 +7,8 @@
 ```
 In 17 of October 2018 bitcoin registered an all time record of
 60 000 000 trillions of hashes per second.
-Source: <a href="blockchain.com">blockchain.com</a>
 ```
+*Source: <a href="blockchain.com">blockchain.com</a>*
 
 ## Problem
 In the Reconfigurable Computing course, my co-worker Tiago Ramalho and I were challenged to develop a project where we could explore the advantages of using co-processors integrated with Microblaze processor.

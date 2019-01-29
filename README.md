@@ -10,7 +10,7 @@ In 17 of October 2018 bitcoin registered an all time record of
 *Source: <a href="blockchain.com">blockchain.com</a>*
 
 ## Problem
-In the Reconfigurable Computing course, my co-worker <a src="https://github.com/tiagoramalho">Tiago Ramalho</a> and I were challenged to develop a project where we could explore the advantages of using co-processors integrated with Microblaze processor.
+In the Reconfigurable Computing course, my co-worker <a href="https://github.com/tiagoramalho">Tiago Ramalho</a> and I were challenged to develop a project where we could explore the advantages of using co-processors integrated with Microblaze processor.
 We had already heard about Bitcoin and it's proof of work algorithm based on sha-256 computations. And we had also heard about the use of devices like FPGAs, GPUs, ASICs etc. that are used to take advantage of the parallelization properties of sha-256. After some search, we figured that this would be our project.
 
 ## Objective
@@ -18,7 +18,7 @@ The main objective of this project is to develop a fast way of computing sha-256
 
 ## Implementation
 
-mplementation is a critical part of our project. In our personal implementation (aimed to be deployed on a low-spec FPGA) we strive to present a POC using both interruptions and a Microblaze processor.
+Implementation is a critical part of our project has it can significantly improve performance results. In our personal implementation (aimed to be deployed on a low-spec FPGA) we strive to present a PoC using both interruptions and a Microblaze processor.
 The Microblaze processor contains a 32-bit Processor Core and a set of instructions that are more than enough from a developing standpoint. Moreover, it also has a UART and a Timer (we don't make use of the last one). Interruptions are useful for signaling. Our implementation implicates that a value indicating the number of zeros (crypto-challenge) is passed on. The coprocessor checks the number of zeros. If the crypto-puzzle is solved it throws an exception.
 Our implementation also allows for a variable number of co-processors to be deployed. This becomes useful when deploying on more robust FPGA's.
 

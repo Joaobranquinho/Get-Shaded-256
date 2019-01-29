@@ -1,6 +1,6 @@
 # Get Shaded :two::five::six:
 
-<img src="https://github.com/Joaobranquinho/Get-Shaded-256/blob/master/imgs/sha.png">
+<img src="https://github.com/tiagoramalho/Get-Shaded-256/blob/master/imgs/sha.png">
 
 **University Project - Reconfigurable Computing**
 ```
@@ -10,7 +10,7 @@ In 17 of October 2018 bitcoin registered an all time record of
 *Source: <a href="blockchain.com">blockchain.com</a>*
 
 ## Problem
-In the Reconfigurable Computing course, my co-worker <a href="https://github.com/tiagoramalho">Tiago Ramalho</a> and I were challenged to develop a project where we could explore the advantages of using co-processors integrated with Microblaze processor.
+In the Reconfigurable Computing course, my co-worker <a href="https://github.com/Joaobranquinho">João Branquinho</a> and I were challenged to develop a project where we could explore the advantages of using co-processors integrated with Microblaze processor.
 We had already heard about Bitcoin and it's proof of work algorithm based on sha-256 computations. And we had also heard about the use of devices like FPGAs, GPUs, ASICs etc. that are used to take advantage of the parallelization properties of sha-256. After some search, we figured that this would be our project.
 
 ## Objective
